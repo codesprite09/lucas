@@ -17,7 +17,7 @@ document.getElementById('botao-traduzir').addEventListener('click', function() {
                     fr: 'Le chiot aboie fort!'
                 }
             },
-            imagem: 'link-para-imagem-cachorro.jpg'
+            imagem: 'https://raw.githubusercontent.com/codesprite09/lucas/refs/heads/main/img/cachorro.webp'
         },
         'gato': {
             traducao: { en: 'cat', fr: 'chat' },
@@ -30,7 +30,7 @@ document.getElementById('botao-traduzir').addEventListener('click', function() {
                     fr: 'Le minou fait la sieste.'
                 }
             },
-            imagem: 'link-para-imagem-gato.jpg'
+            imagem: 'https://raw.githubusercontent.com/codesprite09/lucas/refs/heads/main/img/gato.jpg'
         },
         'casa': {
             traducao: { en: 'house', fr: 'maison' },
@@ -43,7 +43,7 @@ document.getElementById('botao-traduzir').addEventListener('click', function() {
                     fr: 'La baraque est énorme!'
                 }
             },
-            imagem: 'link-para-imagem-casa.jpg'
+            imagem: 'https://raw.githubusercontent.com/codesprite09/lucas/refs/heads/main/img/casa.jpeg'
         },
         'carro': {
             traducao: { en: 'car', fr: 'voiture' },
@@ -56,7 +56,7 @@ document.getElementById('botao-traduzir').addEventListener('click', function() {
                     fr: 'La bagnole est super rapide!'
                 }
             },
-            imagem: 'link-para-imagem-carro.jpg'
+            imagem: 'https://raw.githubusercontent.com/codesprite09/lucas/refs/heads/main/img/carro.jpeg'
         },
         // Adicione mais palavras conforme necessário
     };
