@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradutor de Palavras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Tradutor de Palavras</h1>
-        <p>Digite a palavra que deseja traduzir:</p>
-    </header>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="display-4">Tradutor de Palavras</h1>
+            <p class="lead">Digite a palavra que deseja traduzir:</p>
+        </header>
 
-    <main>
-        <input type="text" id="input-palavra" placeholder="Digite uma palavra...">
-        <button id="botao-traduzir">Traduzir</button>
+        <main>
+            <div class="form-group">
+                <input type="text" id="input-palavra" class="form-control bg-secondary text-light" placeholder="Digite uma palavra...">
+            </div>
+            <button id="botao-traduzir" class="btn btn-primary btn-block">Traduzir</button>
 
-        <div id="resultado">
-            <h2>Resultado:</h2>
-            <p id="traducao">A tradução aparecerá aqui.</p>
-        </div>
-    </main>
+            <div id="resultado" class="mt-4">
+                <h2>Resultado:</h2>
+                <p id="traducao" class="alert alert-info">
+                    <strong>Inglês:</strong> <span id="traducao-ingles">A tradução aparecerá aqui.</span><br>
+                    <strong>Francês:</strong> <span id="traducao-frances">A tradução aparecerá aqui.</span>
+                </p>
+                <p id="exemplo" class="alert alert-secondary">Exemplo de uso: </p>
+                <img id="imagem" src="" alt="Imagem relacionada" class="img-fluid mt-3" style="display: none;">
+            </div>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Tradutor de Palavras. Todos os direitos reservados.</p>
-    </footer>
+        <footer class="text-center mt-5">
+            <p>&copy; 2024 Tradutor de Palavras. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
